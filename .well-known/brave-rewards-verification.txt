@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: shahzarmazhar.github.io 
+Token: f43334f5030e61da64c140d0613b913faae6ca49d8d11d4d20ea31d98030a9a6
