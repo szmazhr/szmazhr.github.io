@@ -181,10 +181,10 @@ nav .nav-menu a:hover{
 
 #welcome-section h1{
     font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 3rem;
     text-align: center;
     color: var(--color-zinc-800);
-    text-shadow: 3px 3px 16px rgba(255, 255,255, 1);
 }
 #welcome-section h1::before{
     font-family: 'Playfair Display', serif;
