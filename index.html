@@ -4,37 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Shahzar Mazhar</title>
+    <title>Shahzar Mazhar</title>
+
     <link rel="stylesheet" href="./css/style.css">
+
+
+    
 </head>
 <body>
-    <div class="header">
-        <img src="./img/passport size.jpg" alt="">
-        <div class="name">
-            <h1>Shahzar <span class="cblue">Mazhar</span></h1>
-            <p>Just a crazy guy!</p>
-        </div>
-        <table>
+    <nav id="navbar">
 
-            <tr>
-                <td class="bold">Email:</td>
-                <td>
-                    <a href="mailto:mohdshahzar.1996@gmail.com" class="cblue">mohdshahzar.1996@gmail.com</a></td>
-            </tr>
-            <tr>
-                <td class="bold">Website:</td>
-                <td>
-                    <a href="#" class="cblue">coming soon</a></td>
-            </tr>
-        </table>
-    </div>
-    <hr class="neckline">
-    <div class="body">
-        <div class="about">
-            <p>I’m a nerdy Indian. I love technology in every form and medium, learning new things every day, and constantly tackling new challenges.</p>
-            <p>I consider myself a unique production powerhouse, equipped with a wide range of skills and with the constant desire to push my boundaries and create something new every day.</p>
-            <p>I’m a passionate <b class="cblue">Designer</b>, a meticulous <b class="cblue">Developer</b>, and an unstoppable <b class="cblue">Dreamer</b>.</p>
+            <div class="logo"><a href="./"><svg><use xlink:href="#logo" ></use></svg></a></div>         <!-- logo-svg -->  <!-- logo should be little wider in big screen, soon... -->
+
+            <span class="toggle-menu"><svg><use xlink:href="#menu-toggle-svg" ></use></svg></span>          <!-- toggle-menu-svg -->
+            
+            <ul class="nav-menu">
+                <li><a href="./">Home</a></li>
+                <li><a id="blog-link" href="#">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://www.github.com/ShahzarMazhar" id="profile-link" target="_blank">GitHub</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+
+            </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <div class="ws-graphics-main"></div> <!--maybe I should use SVG here-->
+        <div class="welcome-text">
+            <h1>Shahzar Mazhar</h1>
+            <p>A </p>
         </div>
+    </section>
+    <section id="projects">
+
+        <h2>Some of My Projects</h2>
+        <div class="showcase">
+
+            <a href="https://codepen.io/shahzarmazhar/full/PoEaOPP" class="project-tile" target="_blank" >
+                <img src="./img/survey-form.jpg" alt="">
+                <p>Restaurant Customer Satisfaction Survey</p>
+            </a>
+
+
+
+            <a href="https://codepen.io/shahzarmazhar/full/gOozQZR" class="project-tile" target="_blank" >
+                <img src="./img/windows-10-logo-loading.gif" alt="">
+                <p>[HTML-CSS] Animated Windows 10 loading screen</p>
+            </a>
+
+
+
+            <a href="https://codepen.io/shahzarmazhar/full/RwxBRBW" class="project-tile" target="_blank" >
+                <img src="./img/dr_a_p_j_abdul_kalam.jpg" alt="">
+                <p>Tribute to Dr. A. P. J. Abdul Kalam</p>
+            </a>
+
+            <a href="https://codepen.io/shahzarmazhar/full/mdpzLNR" class="project-tile" target="_blank" >
+                <img src="./img/technical-documentation.jpg" alt="">
+                <p>GitHub SSH Documentation</p>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <div class="heading">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+
+        <div class="contact-method">
+            <ul>
+                <li><a href="https://github.com/ShahzarMazhar" target="_blank"><svg><use xlink:href="#social-icon-github"></use></svg>GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/shahzar-mazhar-3712a0206/" target="_blank"><svg><use xlink:href="#social-icon-linkedin"></use></svg>Linkedin</a></li>
+                <li><a href="https://twitter.com/ShahzarMazharOG" target="_blank"><svg><use xlink:href="#social-icon-twitter"></use></svg>Twitter</a></li>
+                <li><a href="mailto:shahzarmazharofficial@gmail.com"><svg><use xlink:href="#social-icon-email"></use></svg>E-mail</a></li>
+            </ul>
+
+            <div class="form">
+                <h3>Send a message</h3>
+                <p><em>(fields marked with <span>*</span> are required</em>)</p>
+                
+                <form action="#" method="get">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="What is your name?">
+
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="email" id="" placeholder="What is your email address?" required>
+
+                    <label for="message">Message<span>*</span></label>
+                    <textarea name="details" id="message" placeholder="What is your message?" required></textarea>
+                    
+                    <input type="submit" value="Send Message"> 
+                </form>
+            </div>
+        </div>
+           
+
+        
+
+        
+        <footer>
+            <p>&copy; 2022 Shahzar Mazhar. All rights reserved</p>
+        </footer>
+
+    </section>
+
+<div class="alert">
+    <div class="alert-msg">
+        <h3>Blog</h3>
+        <span>X</span>
+        <hr>
+        <p>Coming Soon...</p>
     </div>
+
+</div>
+
+<!-- SVGs: SVGs are awesome --> 
+<svg style="display: none;">
+<!-- logo svg -->
+    <symbol id="logo" viewBox="0 0 693.1 664.03" >
+        <path  d="M584.7,25.26,624,20.53c184.27-3.44,286.38,84.52,340.59,206.35,28.33,63.52,33.95,174,5.65,242.64C929,569.6,857,629.08,751.39,667.94c-51.15,18.83-140.89,21.31-197.28,4.93-44.88-13.09-84.86-32.14-119.19-55.64-11.47-9.3-22.95-19-34.42-28.56v-.49c.17-.16.34.28.51-.49,6.85-1.64,13.7-2.81,20.55-4.93,9.93,12.35,24.65,20.45,38,29.54,70.19,47.72,197.75,76.58,299,35.46,86.55-35.17,154-89.67,190.6-172.33,8.14-18.39,12.85-39.17,17.46-60.2,24.09-107.79-17.52-199-62.67-257.87-10.83-14.12-22.85-29.47-37-40.13-33-25.59-67-48.57-112.51-62.77-20.34-6.18-42-9.59-64.73-13.79-45.59-8.41-99.53-1.75-136.14,8.86C459,77,392.78,132.69,351.18,211.4c-14.63,27.19-24.32,57.6-31.85,92.69-1.2,13-2.4,25.27-3.6,37.91-1.91,11.28-1.31,27.38.52,38.4,9.34,50.62,21.2,97.46,45.21,134.42C370.7,527.29,380,540,389.2,552.24c4.62,5.08,9.25,10.39,14.26,15.26H402l-18,4.43-26.71-32.49c-15.81-21.54-28.15-47.5-38-74.35-8.53-23.21-13.29-49-19-74.84-9.73-44.05.72-95.95,11.82-130,31.54-96.75,99.91-172.95,192.14-211.72C528.59,38.33,555.92,31.55,584.7,25.26Zm88.22,49.85c66.34-1.32,160.78,14.83,185.46,50.33,16.15,23.23,24.68,69.67-4.62,86.17-11.86,6.67-34.51-3.21-31.34-17.23,2.13-9.39,15.09-11.32,17.47-20.68,4.69-18.47-33.6-33.52-47.27-37.42-33.91-9.7-87.93-11-126.89-3.94-28.66,5.26-54.51,8.6-80.14,16.25C540.81,161.94,500,179,460.23,195.85c-26.81,11.88-75.59,39.27-81.68,68.44-3,14.35,23.38,25.7,64.73,38.9a758.43,758.43,0,0,0,106.86,25.6c55.4,9.44,68.41,13.46,96.07,24.62h0s25.72-11,39-5.91h-1l-32.37,11.82c18.18,35.74-10.5,70.86-26.71,91.58-49,64-120.84,105.16-208.58,132-23.07,7-93.5,17-103.78-6.89-9.94-23,15.77-54.34,23.63-67,.35-.31.69-.15,1,0,4.68,6.73,8.22,13.46,12.33,20.19L340.53,543c-4.54,10.08-4.44,17.31-1.37,22.33,5.9,9.66,24.81,11.18,58.91,4.75,62-11.7,150-79.17,178.27-109.94,7.76-7.74,31.27-35,27.58-61.54-1-7.4-5.38-14-10.63-20.05-54.72,23.39-110.95,43.12-157.2,74.43-16.67,11.17-32,23.77-47.78,35.86l-25.69,23.63-9.76-18.22c10.45-7.87,20.9-16.74,31.34-25.11,32.47-23.5,73.25-48.87,112-65.48,19.88-7.92,41.18-15.7,62.67-22.16,7.18-2.15,17.51-4,26.72-7.87l-73-21.18c-44.83-13.61-90.88-25.22-132-42.34-19.43-8.09-48.11-18.92-42.12-49.24,6.15-31.14,29.67-56.56,51.37-73.36,12.54-9.67,23-22.1,36-31.51,41.39-29.81,88.81-51.68,145.39-67,21.31-5.7,43.64-7.87,66.79-11.82C649.82,76.37,661.28,75.55,672.92,75.11Zm138.73,120c2.94.19,4.68.24,6.17,1.47,10.57,5.31,6,36.51,3.59,48.22q-9.75,49.44-19.51,98.88c-2.22,10-6.23,29.72-.72,38.55l2.16.63c11.38-5.52,17.56-17.7,24.23-27.86,16.75-25.23,31.62-53.14,47.74-79.47,6.87-11.55,17.83-37.76,33.37-39.1,13.2,6.74,7.54,44.32,4.62,58.55q-8.22,38.61-16.43,77.24-6.17,23.61-12.32,47.23c-2.49,16.46-1.38,48.78,9.24,54.12,9.25,2.22,15.17-7.35,19-12.3a193.4,193.4,0,0,0,22.08-36.41q4.1-9.1,8.21-18.2c.81,38-9.8,68.18-28.75,87.08-9.38,9.35-26.38,20.17-36.44,3.44-7.24-11.93-8.53-36.66-6.16-55.1,4.54-35.5,9-67.5,18-99.38,3.05-10.66,13.16-41,6.68-52.15h-1.14c-8.05,4.08-12.76,11.16-18.1,17.85-22.25,27.85-38.42,62-59.21,91.23-3.79,4.85-24.73,32.72-34.95,24.79-7.52-5.84-1.56-37.51,0-46.11,8.11-33.18,11-68.09,17.07-104.62,3-14.43,1.24-35-5.82-42.14h-3c-18.42,9.29-32,44.87-40.87,64.45-26.17,57.45-49.43,117.9-74,178-7.76,21.15-15.52,42.31-22.78,63.46-3.73,8.79-6.16,21.55-17.57,22.31-24.57-10.32,4.3-69.17,9.31-81.31,23.34-54.42,46.45-109,68.81-164.61,6.94-16.94,25.88-52.13,21.38-73.38-7.22-5.23-14.91-5.75-26-3.46v-.58c5.6-12.62,17.14-25.72,28.23-33.94,2.91-2.16,8.65-7.74,13.86-4.43,9.83,6.57-1,35.44,2.07,47.28l3.14-.08C760,231,794.27,204,811.65,195.06Z" transform="translate(-296.12 -20.08)"/>
+    </symbol>
+<!-- toggle-menu svg -->
+    <symbol id="menu-toggle-svg"  viewBox="0 0 380 380">
+        <line class="middle-line" x1="20" y1="190" x2="350" y2="190"  stroke-width="30" stroke-linecap="round" stroke="black"  />
+        <line class="bottom-line" x1="20" y1="340" x2="350" y2="340"  stroke-width="30" stroke-linecap="round" stroke="black" />
+        <line class="top-line" x1="20" y1="30" x2="350" y2="30"  stroke-width="30" stroke-linecap="round" stroke="black" />
+    </symbol>
+<!-- social media icon-svg -->
+    <symbol id="social-icon-twitter" viewBox="0 0 16 16">
+            <path d="M16,3.038c-0.589,0.261-1.221,0.438-1.885,0.517c0.678-0.406,1.198-1.05,1.443-1.816c-0.634,0.376-1.337,0.649-2.085,0.797 c-0.599-0.638-1.452-1.037-2.396-1.037c-1.813,0-3.283,1.47-3.283,3.282c0,0.257,0.029,0.508,0.085,0.748 c-2.728-0.137-5.147-1.444-6.766-3.43C0.831,2.584,0.669,3.148,0.669,3.75c0,1.139,0.579,2.144,1.46,2.732 C1.592,6.465,1.086,6.317,0.643,6.071c0,0.014,0,0.027,0,0.041c0,1.59,1.132,2.917,2.633,3.219C3,9.406,2.71,9.447,2.411,9.447 c-0.212,0-0.417-0.021-0.618-0.059c0.418,1.304,1.63,2.253,3.066,2.28c-1.123,0.88-2.539,1.405-4.077,1.405 c-0.265,0-0.526-0.016-0.783-0.046c1.453,0.931,3.178,1.475,5.032,1.475c6.038,0,9.34-5.002,9.34-9.34 c0-0.142-0.003-0.284-0.01-0.425C15.003,4.274,15.56,3.696,16,3.038z" />
+    </symbol>
+    <symbol id="social-icon-email" viewBox="18 0 16 16">
+            <path d="M18,6v8h16V6l-8,5L18,6z M18,2v2l8,5l8-5V2H0z" />
+    </symbol>
+    <symbol id="social-icon-linkedin" viewBox="0 18 16 16">
+            <path d="M14.815,18H1.18C0.53,18,0,18.517,0,19.153v13.694C0,33.485,0.53,34,1.18,34h13.636C15.467,34,16,33.485,16,32.847V19.153 C16,18.517,15.467,18,14.815,18z M4.746,31.634H2.371V23.999h2.376V31.634z M3.559,22.955c-0.762,0-1.377-0.617-1.377-1.377 c0-0.759,0.615-1.376,1.377-1.376c0.759,0,1.376,0.617,1.376,1.376C4.935,22.339,4.319,22.955,3.559,22.955z M13.633,31.634h-2.371 V27.922c0-0.886-0.017-2.025-1.233-2.025c-1.235,0-1.423,0.964-1.423,1.96v3.778H6.235V23.999h2.274v1.043h0.033 c0.317-0.6,1.091-1.233,2.245-1.233c2.401,0,2.845,1.581,2.845,3.638V31.634z" />
+    </symbol>
+    <symbol id="social-icon-github" viewBox="18 18 16 16">
+            <path d="M25.999,18C21.582,18,18,21.582,18,26c0,3.534,2.292,6.533,5.471,7.591 c0.4,0.073,0.546-0.174,0.546-0.386c0-0.19-0.007-0.693-0.011-1.361c-2.225,0.483-2.695-1.072-2.695-1.072 c-0.364-0.924-0.888-1.17-0.888-1.17c-0.726-0.496,0.055-0.486,0.055-0.486c0.803,0.057,1.225,0.824,1.225,0.824 c0.714,1.223,1.872,0.87,2.328,0.665c0.073-0.517,0.279-0.87,0.508-1.069c-1.776-0.202-3.644-0.888-3.644-3.954 c0-0.873,0.312-1.587,0.823-2.147C21.637,23.233,21.362,22.419,21.798,21.318c0,0,0.672-0.215,2.2,0.82C24.636,21.961,25.32,21.872,26,21.869 c0.679,0.003,1.364,0.092,2.003,0.269c1.527-1.035,2.198-0.82,2.198-0.82c0.436,1.101,0.162,1.915,0.08,2.117 c0.513,0.559,0.822,1.273,0.822,2.147c0,3.073-1.87,3.75-3.653,3.948c0.287,0.247,0.543,0.735,0.543,1.481 c0,1.069-0.01,1.932-0.01,2.195c0,0.214,0.144,0.463,0.55,0.385C31.71,32.53,34,29.534,34,26C34,21.582,30.418,18,25.999,18z" />
+    </symbol>
+</svg>
+
+<!-- toggle-menu script -->
+<script type="text/javascript">
+
+[`.toggle-menu`,`.nav-menu`].forEach(e=>$(e).addEventListener(`click`,()=>[`#menu-toggle-svg`,`nav`].forEach(e=>$(e).classList.toggle(`active`)))); 
+
+[`#blog-link`,`.alert`].forEach(e=>$(e).addEventListener(`click`, () => $(`.alert`).classList.toggle(`active`)));
+
+// const toggleMenu = $(`.toggle-menu`);
+// const navMenu = $(`.nav-menu`);
+
+// toggleMenu.addEventListener('click', toggleFunc);
+
+// function toggleFunc(){
+//     $(`#menu-toggle-svg`).classList.toggle('active')
+//     $(`nav`).classList.toggle('active')
+// }
+
+function $(arg){return document.querySelector(arg)}
+
+
+
+
+</script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 </html>
