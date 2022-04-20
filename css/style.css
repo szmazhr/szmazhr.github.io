@@ -50,6 +50,10 @@ nav .logo{
     flex-basis: 80px;
 }
 
+nav .logo-name{
+    display: none;
+    
+}
 nav .logo svg{
     text-align: center;
     height: 75px;
@@ -153,6 +157,11 @@ nav .nav-menu a:hover{
 
     nav.active .logo svg{
         transform: translateY(90%);
+    }
+
+    nav.active .logo-name{
+        
+        display: inline;
     }
 
     nav.active .nav-menu {
@@ -597,6 +606,17 @@ footer p{
     nav .nav-menu a:hover::after{
         width: 62%;
     }
+    nav .logo-icon{
+        width: 80px;
+    }   
+    nav .logo-name{
+        max-width: 200px;
+        display: inline;
+    }
+    nav .logo{
+        flex-grow: 1;
+    }
+
 
 }
 @media (min-width:1440px){
@@ -607,3 +627,8 @@ footer p{
     }
     
 }
+
+@font-face {
+    font-family: 'stranger-back-in-the-night';
+    src: url("./fonts/stranger-back-in-the-night.woff2") format('woff2');
+    }
